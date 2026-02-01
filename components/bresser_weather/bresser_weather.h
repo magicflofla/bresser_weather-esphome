@@ -7,12 +7,15 @@
 #include "WeatherSensorCfg.h"
 #include "WeatherSensor.h"
 
-// Pin definitions for D1 Mini with CC1101
-define PIN_RECEIVER_CS 5           // D8
-define PIN_RECEIVER_IRQ 12           // D2 (GD0)
-define PIN_RECEIVER_GPIO 27          // D1 (GD2)
-define PIN_RECEIVER_RST RADIOLIB_NC // Not connected
-define USE_CC1101
+#if defined(ESP32)
+    #define PIN_CC1101_CS   5
+    #define PIN_CC1101_GDO0 27
+    #define PIN_CC1101_GDO2 12
+#elif defined(ESP8266)
+    #define PIN_CC1101_CS   2
+    #define PIN_CC1101_GDO0 4
+    #define PIN_CC1101_GDO2 5
+#endif
 
 namespace esphome
 {
