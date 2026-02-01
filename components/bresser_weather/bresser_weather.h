@@ -1,11 +1,16 @@
 #pragma once
 
+/*
 #include "esphome/core/component.h"
 #include "esphome/components/sensor/sensor.h"
 #include "esphome/components/binary_sensor/binary_sensor.h"
 #include "esphome/components/text_sensor/text_sensor.h"
 #include "WeatherSensorCfg.h"
 #include "WeatherSensor.h"
+*/
+#include "esphome.h"
+#include "RadioLib.h"
+#include "esphome/core/gpio.h"
 
 #if defined(ESP32)
     #define PIN_CC1101_CS   5
