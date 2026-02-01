@@ -1,4 +1,3 @@
-#line 1 "C:\\Users\\florian.flaschberger\\AppData\\Local\\Temp\\.arduinoIDE-unsaved2025010-4848-466nlq.rvn72\\BresserWeatherSensorMQTTCustom\\src\\WeatherSensorCfg.h"
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // WeatherSensorCfg.h
 //
@@ -78,8 +77,6 @@
 
 #if !defined(WEATHER_SENSOR_CFG_H)
 #define WEATHER_SENSOR_CFG_H
-
-#include <Arduino.h>
 
 // ------------------------------------------------------------------------------------------------
 // --- Weather Sensors ---
