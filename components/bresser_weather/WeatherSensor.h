@@ -93,7 +93,6 @@
 #ifndef WeatherSensor_h
 #define WeatherSensor_h
 
-#include <Arduino.h>
 #include <vector>
 #include <string>
 #include <Preferences.h>
