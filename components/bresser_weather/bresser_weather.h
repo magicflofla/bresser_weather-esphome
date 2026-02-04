@@ -1,11 +1,5 @@
 #pragma once
 
-/*
-#include "esphome.h"
-#include "RadioLib.h"
-#include "esphome/core/gpio.h"
-*/
-
 #include "esphome/core/component.h"
 #include "esphome/components/sensor/sensor.h"
 #include "esphome/components/binary_sensor/binary_sensor.h"
@@ -13,15 +7,12 @@
 #include "WeatherSensorCfg.h"
 #include "WeatherSensor.h"
 
-#if defined(ESP32)
-    #define PIN_CC1101_CS   5
-    #define PIN_CC1101_GDO0 27
-    #define PIN_CC1101_GDO2 12
-#elif defined(ESP8266)
-    #define PIN_CC1101_CS   2
-    #define PIN_CC1101_GDO0 4
-    #define PIN_CC1101_GDO2 5
-#endif
+// Pin definitions for D1 Mini with CC1101
+#define PIN_RECEIVER_CS 2           // D8
+#define PIN_RECEIVER_IRQ 4           // D2 (GD0)
+#define PIN_RECEIVER_GPIO 5          // D1 (GD2)
+#define PIN_RECEIVER_RST RADIOLIB_NC // Not connected
+#define USE_CC1101
 
 namespace esphome
 {
