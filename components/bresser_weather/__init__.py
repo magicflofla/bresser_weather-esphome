@@ -15,7 +15,7 @@ from esphome.const import (
     UNIT_PERCENT,
 )
 
-DEPENDENCIES = ["esp32"]
+DEPENDENCIES = ["esp8266"]
 AUTO_LOAD = ["sensor", "binary_sensor", "text_sensor"]
 
 CONF_WIND_GUST = "wind_gust"
