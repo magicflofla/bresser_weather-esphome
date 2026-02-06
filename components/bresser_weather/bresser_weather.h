@@ -7,6 +7,12 @@
 #include "WeatherSensorCfg.h"
 #include "WeatherSensor.h"
 
+#define cs_pin: GPIO02
+#define gdo0_pin: GPIO04
+#define gdo2_pin: GPIO05
+#define frequency: 868.3MHz
+#define USE_cc1101
+
 namespace esphome
 {
     namespace bresser_weather
