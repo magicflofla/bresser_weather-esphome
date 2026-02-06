@@ -8,10 +8,9 @@
 #include "WeatherSensor.h"
 
 // Pin definitions for D1 Mini with CC1101
-#define PIN_RECEIVER_CS 15           // D8
-#define PIN_RECEIVER_IRQ 4           // D2 (GD0)
-#define PIN_RECEIVER_GPIO 5          // D1 (GD2)
-#define PIN_RECEIVER_RST RADIOLIB_NC // Not connected
+#define PIN_CC1101_CS   2
+#define PIN_CC1101_GDO0 4
+#define PIN_CC1101_GDO2 5
 #define USE_CC1101
 
 namespace esphome
