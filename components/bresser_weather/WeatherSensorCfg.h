@@ -79,7 +79,7 @@
 #if !defined(WEATHER_SENSOR_CFG_H)
 #define WEATHER_SENSOR_CFG_H
 
-#include <Arduino.h>
+//#include <Arduino.h>
 
 // ------------------------------------------------------------------------------------------------
 // --- Weather Sensors ---
