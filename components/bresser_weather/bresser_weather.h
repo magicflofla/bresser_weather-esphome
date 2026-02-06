@@ -7,12 +7,6 @@
 #include "WeatherSensorCfg.h"
 #include "WeatherSensor.h"
 
-// Pin definitions for D1 Mini with CC1101
-#define PIN_CC1101_CS   2
-#define PIN_CC1101_GDO0 4
-#define PIN_CC1101_GDO2 5
-#define USE_CC1101
-
 namespace esphome
 {
     namespace bresser_weather
