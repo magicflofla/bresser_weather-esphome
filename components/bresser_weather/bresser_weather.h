@@ -4,8 +4,8 @@
 #include "esphome/components/sensor/sensor.h"
 #include "esphome/components/binary_sensor/binary_sensor.h"
 #include "esphome/components/text_sensor/text_sensor.h"
-#include "WeatherSensorCfg.h"
-#include "WeatherSensor.h"
+//#include "WeatherSensorCfg.h"
+//#include "WeatherSensor.h"
 
 // Pin definitions for D1 Mini with CC1101
 #define PIN_RECEIVER_CS 5           // D8
