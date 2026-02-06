@@ -15,7 +15,7 @@ void BresserWeatherComponent::setup() {
 void BresserWeatherComponent::loop() {
     // Führe die Abfrage nur alle 100ms aus, um die CPU und Logs zu entlasten
     static uint32_t last_loop = 0;
-    if (millis() - last_loop < 100) {
+    if (millis() - last_loop < 500) {
         return;
     }
     last_loop = millis();
