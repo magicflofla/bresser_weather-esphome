@@ -13,11 +13,14 @@ void BresserWeatherComponent::setup() {
 }
 
 void BresserWeatherComponent::loop() {
-    int decode_status = this->ws_.getMessage();
-
-    if (decode_status != 0 && decode_status != DECODE_OK) {
-        ESP_LOGV(TAG, "Funk-Status erkannt: %d (Kein gültiges Paket)", decode_status);
+    // Führe die Abfrage nur alle 100ms aus, um die CPU und Logs zu entlasten
+    static uint32_t last_loop = 0;
+    if (millis() - last_loop < 100) {
+        return;
     }
+    last_loop = millis();
+
+    int decode_status = this->ws_.getMessage();
 
     if (decode_status == DECODE_OK) {
         const int i = 0;
