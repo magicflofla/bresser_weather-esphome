@@ -7,11 +7,11 @@
 #include "WeatherSensorCfg.h"
 #include "WeatherSensor.h"
 
-#define cs_pin: GPIO02
-#define gdo0_pin: GPIO04
-#define gdo2_pin: GPIO05
-#define frequency: 868.3MHz
-#define USE_cc1101
+// Pin definitions for D1 Mini with CC1101
+#define PIN_CC1101_CS   2
+#define PIN_CC1101_GDO0 4
+#define PIN_CC1101_GDO2 5
+#define USE_CC1101
 
 namespace esphome
 {
